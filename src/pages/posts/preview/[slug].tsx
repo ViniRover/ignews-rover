@@ -55,13 +55,6 @@ export default function Post({ post }: PostProps) {
   );
 }
 
-export const getStaticPaths: GetStaticPaths = async () => {
-  return {
-    paths: [],
-    fallback: 'blocking',
-  };
-}
-
 export const getStaticProps: GetStaticProps = async ({params }) => {
   const { slug } = params;
 
